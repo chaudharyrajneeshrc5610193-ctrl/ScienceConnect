@@ -1,0 +1,295 @@
+/* =========================================================
+   SCIENCECONNECT — STUDENT LOGIN
+   ========================================================= */
+
+.student-login-page {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(0, 229, 255, 0.12),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(124, 58, 237, 0.15),
+      transparent 35%
+    ),
+    #050816;
+
+  color: white;
+}
+
+/* =========================================================
+   LOGIN CARD
+   ========================================================= */
+
+.student-login-card {
+  width: 100%;
+  max-width: 500px;
+
+  padding: 45px;
+
+  position: relative;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 24px;
+
+  background: rgba(11, 16, 37, 0.92);
+
+  box-shadow:
+    0 30px 100px rgba(0, 0, 0, 0.45);
+
+  backdrop-filter: blur(20px);
+}
+
+/* =========================================================
+   BACK BUTTON
+   ========================================================= */
+
+.student-back-btn {
+  position: absolute;
+
+  top: 20px;
+  left: 20px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #8993b0;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.student-back-btn:hover {
+  color: #00e5ff;
+
+  transform: translateX(-3px);
+}
+
+/* =========================================================
+   STUDENT ICON
+   ========================================================= */
+
+.student-icon {
+  width: 75px;
+  height: 75px;
+
+  margin: 10px auto 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #00e5ff,
+      #7c3aed
+    );
+
+  font-size: 35px;
+
+  box-shadow:
+    0 0 40px rgba(0, 229, 255, 0.25);
+}
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.student-login-card h1 {
+  text-align: center;
+
+  font-size: 34px;
+
+  letter-spacing: -1px;
+
+  margin-bottom: 10px;
+}
+
+.student-login-card h1 span {
+  color: #00e5ff;
+}
+
+.student-subtitle {
+  text-align: center;
+
+  color: #727d9a;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  margin-bottom: 30px;
+}
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.student-login-card form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.student-login-card label {
+  margin-top: 8px;
+
+  color: #cbd5e1;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+.student-login-card input,
+.student-login-card select {
+  width: 100%;
+
+  padding: 14px 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 10px;
+
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  color: white;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  transition: 0.3s ease;
+}
+
+.student-login-card input::placeholder {
+  color: #58627d;
+}
+
+.student-login-card input:focus,
+.student-login-card select:focus {
+  border-color: #00e5ff;
+
+  background: rgba(0, 229, 255, 0.04);
+
+  box-shadow:
+    0 0 20px rgba(0, 229, 255, 0.08);
+}
+
+/* SELECT */
+
+.student-login-card select {
+  cursor: pointer;
+}
+
+.student-login-card select option {
+  background: #0b1025;
+
+  color: white;
+}
+
+/* =========================================================
+   SUBMIT BUTTON
+   ========================================================= */
+
+.student-login-submit {
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00d9ff,
+      #6366f1
+    );
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+  box-shadow:
+    0 0 25px rgba(0, 217, 255, 0.15);
+}
+
+.student-login-submit:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 35px rgba(0, 217, 255, 0.25);
+}
+
+/* =========================================================
+   SECURITY NOTE
+   ========================================================= */
+
+.student-note {
+  margin-top: 25px;
+
+  text-align: center;
+
+  color: #414b67;
+
+  font-size: 11px;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 550px) {
+
+  .student-login-page {
+    padding: 20px;
+  }
+
+  .student-login-card {
+    padding: 40px 25px;
+  }
+
+  .student-login-card h1 {
+    font-size: 28px;
+  }
+
+  .student-icon {
+    width: 65px;
+    height: 65px;
+
+    font-size: 30px;
+  }
+
+}
